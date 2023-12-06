@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+            <title></title>
+
+        <!--custom stylesheet-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--external stylesheets-->
+        <link rel="stylesheet" href="lib/scrollmap.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+        <div class="content">
+             <!--title block, background image is title image-->
+            <div class="row" style="background-image:url(assets/Try1.png); background-size:cover;">
+                <div class="center title">
+                    <!--title text-->
+                    <h1>Vintage Sewing Map</h1>
+                    <!--subtitle or author-->
+                    <p>Maggie Lehane</p>
+                </div>
+            </div>
+            <!--text content block-->
+            <div class="row">
+                <div class="center">
+                    <p>Let's take a look at my Mapbox Studio Basemap! </p>
+                </div>
+            </div>
+            <!--side by side text and image-->
+            <div class="row">
+                <div class="left">
+                    <img class="fit" src="assets/inspiration_board.png">
+                </div>
+                <div class="right">
+                    <p class="vert-center">This map makes use of brown and black along with many different styles of dotted lines, just like vintage sewing patterns. In this way, the land is the pattern piece, and the water is the surface it is laid out on.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <img class="fit" src="assets/Roads.png">
+                </div>
+                <div class="right">
+                    <p class="vert-center">The dotted lines are mostly used for roads to show varying type of road. For example, "larger" primary roads have wider and longer dotted lines, versus "smaller" secondary roads.</p>
+                </div>
+            </div>
+
+            <!--background images with text scrolling over them (sidecar)-->
+            <div class="scroll-container">    
+                <!--background images-->
+                <div class="background-item">
+                    <img src="assets/Paris1.png" data-slide="1" class="fill vert-center">
+                    <img src="assets/Milan2.png" data-slide="2" class="fill hidden">
+                    <img src="assets/London2.png" data-slide="3" class="fill hidden">
+                    <img src="assets/NewYork1.png" data-slide="4" class="fill hidden">
+                </div>
+                <!--foreground text blocks-->
+                <div class="foreground-item">
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Let's go to the big four fashion capitals of the world -- Starting with Paris, France!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Here's Milan, Italy. Here you can see how much natural land and small water bodies surround the city.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Next, this is London, England. You can see the River Thames snake through the city with many ferry lanes.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Lastly, here is New York City, United States! You can see how many roads, of varying importance, are in the city.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--text content block-->
+            <div class="row">
+                <div class="center">
+                    <p>Let's see how this basemap looks at different zoom levels!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="center-wide">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!--slideshow content goes here-->
+                        <div class="slide">
+                            <img src="assets/USA.png">
+                            <p class="caption">A zoomed-out view of the basemap.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/AnotherView.png">
+                            <p class="caption">A small-to-mid scale view of the basemap.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/NYArea2.png">
+                            <p class="caption">A mid-scale view centered on New York City, New York.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/Manhattan2.png">
+                            <p class="caption">A large-scale view of the island of Manhattan.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/LowerManhattan.png">
+                            <p class="caption">Lower Manhattan.</p>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+
+                        <!-- The dots/circles -->
+                        <div class="slideshow-dots">
+                            <span class="dot" id="1"></span>
+                            <span class="dot" id="2"></span>
+                            <span class="dot" id="3"></span>
+                            <span class="dot" id="4"></span>
+                            <span class="dot" id="5"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="center">
+                    <p>Explore the whole basemap!</p>
+                </div>
+                <div class="center-wide">
+                    <iframe class="fit" src="https://api.mapbox.com/styles/v1/mlehane/clo677ik600j201pd0h10f6ch.html?title=view&access_token=pk.eyJ1IjoibWxlaGFuZSIsImEiOiJjbG00NzJxNHIwdnQxM3FsZno2NXExeXN6In0.5sv_6g0kMbsjJHYEIJB_Uw&zoomwheel=true&fresh=true#14.22/53.08566/-8.99206"></iframe>
+                </div>
+            </div>
+
+            <!--credits-->
+            <div class="row no-margin">
+                <div class="center">
+                    <div class="credits">
+                        <p><b>Credits:</b></p>
+                        <p>Map created with Mapbox Studio</p>
+                        <p>Data from openstreetmap</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--external scripts-->
+        <script type="text/javascript" src="lib/scrollmap.js"></script>
+    </body>
+</html>
